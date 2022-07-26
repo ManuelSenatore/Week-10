@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-active-posts',
@@ -6,15 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./active-posts.component.scss']
 })
 export class ActivePostsComponent implements OnInit {
-
    users:any[] = []
-
    isVerde = false
-
    isBold = false
-
-
-
   constructor() { }
 
   ngOnInit(): void {
