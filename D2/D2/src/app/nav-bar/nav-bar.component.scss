@@ -1,0 +1,25 @@
+nav{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+  li{
+    list-style-type: none;
+    display: inline;
+    a{
+      margin-right: 30px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.active{
+  opacity: .5;
+  pointer-events: none;
+  color: grey;
+}
