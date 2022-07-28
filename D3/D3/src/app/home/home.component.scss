@@ -1,0 +1,13 @@
+div{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  button{
+    background-color: brown;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+}

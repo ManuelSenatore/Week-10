@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;"
+[ngClass]="{'bg-primary':post.type=='news','bg-danger':post.type=='politics','bg-success':post.type=='education'}"
+>
+  <div class="card-body">
+    <h5 appUnderline class="card-title">{{post.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{post.id}}</h6>
+    <p class="card-text">{{post.body | pipa}}
+    </p>
+    <button class="btn btn-dark" routerLink = "/dettagli/{{post.id}}">Dettagli</button>
+  </div>
+</div>
