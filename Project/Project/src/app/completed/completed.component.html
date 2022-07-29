@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+    <li routerLink="/">Todos</li>
+    <li routerLink="/completed" [routerLinkActive]="['active']">Completed</li>
+  </ul>
+  </nav>
+
+
+<div class="container">
+  <app-todos-card *ngFor="let t of todo" [todo]="t"></app-todos-card>
+</div>

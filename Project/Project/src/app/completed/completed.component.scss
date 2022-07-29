@@ -1,0 +1,32 @@
+nav{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: greenyellow;
+  li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.active{
+  opacity: .5;
+  pointer-events: none;
+  color: purple;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+

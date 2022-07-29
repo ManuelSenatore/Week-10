@@ -1,0 +1,18 @@
+<nav>
+<ul>
+  <li routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Todos</li>
+  <li routerLink="/completed" [routerLinkActive]="['active']">Completed</li>
+</ul>
+</nav>
+<div class="container">
+  <div>
+<app-todos-card *ngFor="let t of todo" [todo]="t" (editEvent)="completedPost($event)"></app-todos-card>
+
+<p>{{predefinito}}</p>
+</div>
+<div class="form">
+<input placeholder="Add a To do" type="text" [(ngModel)]="inputValue">
+
+<button (click)="reset()">Add</button>
+</div>
+</div>

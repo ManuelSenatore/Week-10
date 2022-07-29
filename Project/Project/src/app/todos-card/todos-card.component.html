@@ -1,0 +1,4 @@
+<div>
+  <p>{{todo.title}}</p>
+  <button *ngIf="todo.completed == false" (click)="completedPost(todo)">Complete</button>
+</div>
